@@ -1,0 +1,19 @@
+name: Deploy V2Ray
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy V2Ray
+      uses: wu-clan-xyz/v2ray-actions@main
+      with:
+        protocol: "vmess"  # یا "vless" اگر ترجیح می‌دهی
+        uuid: "831b7102-3e13-4a8f-a5c7-5d1999123456"  # یک UUID تصادفی (می‌توانی تغییرش دهی)
+        alterid: "64"
+        port: "443"
+        path: "/free-vpn"
+        tls: "true"
