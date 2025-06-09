@@ -11,8 +11,8 @@ jobs:
     - name: Deploy V2Ray
       uses: wu-clan-xyz/v2ray-actions@main
       with:
-        protocol: "vmess"  # یا "vless" اگر ترجیح می‌دهی
-        uuid: "831b7102-3e13-4a8f-a5c7-5d1999123456"  # یک UUID تصادفی (می‌توانی تغییرش دهی)
+        protocol: "vmess"
+        uuid: "831b7102-3e13-4a8f-a5c7-5d1999123456"  # همین UUID یا یک UUID جدید
         alterid: "64"
         port: "443"
         path: "/free-vpn"
